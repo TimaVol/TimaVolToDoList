@@ -1,0 +1,49 @@
+.output {
+  background-color: rgb(109, 109, 15);
+  border: 3px solid rgb(26, 24, 39);
+  min-height: 40vh;
+  max-width: 20vw;
+  margin: 3vh auto;
+  border-radius: 15px;
+}
+
+.items {
+  position: relative;
+  border: 1px solid;
+  max-width: 10vw;
+  margin: 1vh auto;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.items::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  border: 1.5px solid;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  cursor: pointer;
+}
+
+.itemsActive {
+  color: rgba(0, 0, 0, 0.801);
+  text-decoration: line-through;
+}
+
+.itemsActive::after {
+  content: "✅";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  border: 1.5px solid;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  cursor: pointer;
+}

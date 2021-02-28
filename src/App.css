@@ -1,0 +1,38 @@
+.box {
+  border: 1px solid;
+  max-width: 40vw;
+  margin: 10vh auto;
+  background-color: rgb(184, 7, 7);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 5vh;
+}
+
+.addItem  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.addItem input[type="text"] {
+  width: 20vw;
+  border: 3px solid rgb(26, 24, 39);
+  border-radius: 40px;
+  height: 5vh;
+  padding: 0 15px;
+}
+
+.addItem input[type="button"] {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: rgb(109, 109, 15);
+  color: white;
+}
